@@ -56,6 +56,7 @@ class _ProductlistState extends State<Productlist> {
               )
             ],
           ),
+
           bottomSheet: Visibility(
             visible: botVisible,
             child: Container(
@@ -153,6 +154,7 @@ class _ProductlistState extends State<Productlist> {
               ),
             ),
           ),
+
           body: SingleChildScrollView(
             child: Column(
               children: [
