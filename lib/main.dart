@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
         routes: {
           'Cartpage':(context) => CartScreen(),
           'homepage':(context) => Productlist()
+
         },
         home: const Productlist(),
       ),
