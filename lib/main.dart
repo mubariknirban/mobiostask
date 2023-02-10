@@ -20,16 +20,14 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (_) => Productbloc()),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Flutter Demoddd ',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
         routes: {
           'Cartpage':(context) => CartScreen(),
-
           'homepage':(context) => Productlist()
-
         },
         home: const Productlist(),
       ),
