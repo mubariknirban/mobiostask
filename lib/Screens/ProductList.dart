@@ -230,7 +230,7 @@ class _ProductlistState extends State<Productlist> {
                                                                 });
                                                               },
                                                             ),
-                                                            Text("${e}",
+                                                            Text("ss${e}",
                                                               style: new TextStyle(fontSize: 12,color: Colors.black),
                                                             ),
                                                           ],
@@ -240,6 +240,8 @@ class _ProductlistState extends State<Productlist> {
                                                   }).toList(),
                                                 ),
                                               ],
+
+
                                             ),
                                           ),
                                         ],
