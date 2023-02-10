@@ -139,6 +139,8 @@ class _ProductlistState extends State<Productlist> {
 
                             //Add item into dbd dff
 
+                            //Add item into dbd dff so call
+
                             //int totalamnt = quantityitem * int.parse(price);
 
                             productdb additem = productdb(name: name, price: price,quantity: quantityItem.toString(), brand: brand.toString(),totalprice: "1");
