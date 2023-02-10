@@ -20,7 +20,7 @@ class _ProductlistState extends State<Productlist> {
 
   TextEditingController quantity = TextEditingController();
 
-  int quantityitem = 1;
+  int quantityItem = 1;
   bool botmvis = false;
 
   late String name,price,quaty;
@@ -71,9 +71,9 @@ class _ProductlistState extends State<Productlist> {
                         Text("Quantity: ",style:TextStyle(color: Colors.white,fontSize: 15)),
                         GestureDetector(
                           onTap: (){
-                            if(quantityitem > 1){
+                            if(quantityItem > 1){
                               setState(() {
-                                quantityitem--;
+                                quantityItem--;
                               });
                             }
                           },
@@ -98,12 +98,12 @@ class _ProductlistState extends State<Productlist> {
                               ),
                               borderRadius: BorderRadius.circular(40)
                           ),
-                          child: Center(child: Text("${quantityitem}")),
+                          child: Center(child: Text("${quantityItem}")),
                         ),
                         GestureDetector(
                           onTap: (){
                             setState(() {
-                              quantityitem++;
+                              quantityItem++;
                             });
                           },
                           child: Container(
@@ -135,12 +135,12 @@ class _ProductlistState extends State<Productlist> {
 
                             //int totalamnt = quantityitem * int.parse(price);
 
-                            productdb additem = productdb(name: name, price: price,quantity: quantityitem.toString(), brand: brand.toString(),totalprice: "1");
+                            productdb additem = productdb(name: name, price: price,quantity: quantityItem.toString(), brand: brand.toString(),totalprice: "1");
                             List<productdb> listOfUsers = [additem];
                             databasehandler.insertUser(listOfUsers);
                             setState(() {
                               botmvis = false; //hide bottomSheet
-                              quantityitem = 1;
+                              quantityItem = 1;
                             });
 
                           },
