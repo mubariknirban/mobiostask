@@ -78,6 +78,7 @@ class _ProductlistState extends State<Productlist> {
                               });
                             }
                           },
+
                           child: Container(
                             decoration: BoxDecoration(
                                 color: Colors.white,
@@ -86,6 +87,8 @@ class _ProductlistState extends State<Productlist> {
                                 ),
                                 borderRadius: BorderRadius.circular(40)
                             ),
+
+
                             child: Icon(Icons.remove),
                           ),
                         ),
