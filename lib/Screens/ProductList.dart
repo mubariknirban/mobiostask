@@ -5,7 +5,6 @@ import 'package:mobiosolutiontask/Database/db.dart';
 import '../Bloc/Bloc-event-state.dart';
 import '../Model/Itemmodel.dart';
 
-
 class Productlist extends StatefulWidget {
   const Productlist({Key? key}) : super(key: key);
 
@@ -129,7 +128,7 @@ class _ProductlistState extends State<Productlist> {
                               color: Colors.black
                           ),
                         ),
-                        child: FlatButton(
+                        child: ElevatedButton(
                           onPressed: (){
 
                             //Add item into db
