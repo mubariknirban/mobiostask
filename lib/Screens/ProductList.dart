@@ -89,6 +89,7 @@ class _ProductlistState extends State<Productlist> {
                             ),
 
 
+
                             child: Icon(Icons.remove),
                           ),
                         ),
@@ -123,6 +124,7 @@ class _ProductlistState extends State<Productlist> {
                         )
                       ],
                     ),
+
                     Container(
                         height: 30,
                         width: 60,
@@ -135,7 +137,7 @@ class _ProductlistState extends State<Productlist> {
                         child: ElevatedButton(
                           onPressed: (){
 
-                            //Add item into db
+                            //Add item into dbd dff
 
                             //int totalamnt = quantityitem * int.parse(price);
 
