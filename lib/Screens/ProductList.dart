@@ -292,6 +292,8 @@ class _ProductlistState extends State<Productlist> {
                                                content: Text("Please Select Color & Brand !!!",style: TextStyle(color: Colors.yellowAccent),textAlign: TextAlign.center),
                                              );
 
+
+
                                              ScaffoldMessenger.of(context).showSnackBar(snackBar2);
 
                                            }else{
