@@ -21,7 +21,7 @@ class _ProductlistState extends State<Productlist> {
   TextEditingController quantity = TextEditingController();
 
   int quantityItem = 1;
-  bool botmvis = false;
+  bool botVisible = false;
 
   late String name,price,quaty;
 
@@ -57,7 +57,7 @@ class _ProductlistState extends State<Productlist> {
             ],
           ),
           bottomSheet: Visibility(
-            visible: botmvis,
+            visible: botVisible,
             child: Container(
               height: 50,
               color: Colors.blue,
@@ -139,7 +139,7 @@ class _ProductlistState extends State<Productlist> {
                             List<productdb> listOfUsers = [additem];
                             databasehandler.insertUser(listOfUsers);
                             setState(() {
-                              botmvis = false; //hide bottomSheet
+                              botVisible = false; //hide bottomSheet
                               quantityItem = 1;
                             });
 
@@ -285,7 +285,7 @@ class _ProductlistState extends State<Productlist> {
 
                                            }else{
                                              setState(() {
-                                               botmvis = true; //Show bottomSheet
+                                               botVisible = true; //Show bottomSheet
                                                name =  state.productModel[index].productName.toString();
                                                price = state.productModel[index].price.toString();
                                              });
