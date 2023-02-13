@@ -67,7 +67,6 @@ class _CartScreenState extends State<CartScreen> {
                           padding: EdgeInsets.symmetric(horizontal: 10.0),
                           child: Icon(Icons.delete_forever),
                         ),
-
                         key: ValueKey<int>(snapshot.data![index].id!),
                         onDismissed: (DismissDirection direction) async {
                           // This function use for delete the item when slide left side.
