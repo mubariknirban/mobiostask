@@ -36,10 +36,8 @@ class itemloading extends itemstate {
 
 class itemsuccess extends itemstate {
 
-
   List<Productlist> productModel;
   itemsuccess(this.productModel);
-
   @override
   // TODO: implement props
   List<Object> get props => [];
