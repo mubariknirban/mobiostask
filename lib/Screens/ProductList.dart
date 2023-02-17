@@ -173,7 +173,6 @@ class _ProductlistState extends State<Productlist> {
                         if (state is iteminitialstate || state is itemloading) {
                           return _buildLoading();
                         }  else if (state is itemsuccess) {
-
                           return ListView.builder(
                               shrinkWrap: true,
                               scrollDirection: Axis.vertical,
@@ -195,7 +194,7 @@ class _ProductlistState extends State<Productlist> {
                                                 child: Image.asset('assets/cotton.png',fit: BoxFit.fill,)
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 10,
                                           ),
                                           Container(
