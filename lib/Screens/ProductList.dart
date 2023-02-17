@@ -195,7 +195,7 @@ class _ProductlistState extends State<Productlist> {
                                                 child: Image.asset('assets/cotton.png',fit: BoxFit.fill,)
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 10,
                                           ),
                                           Container(
