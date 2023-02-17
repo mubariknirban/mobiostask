@@ -74,7 +74,6 @@ class _CartScreenState extends State<CartScreen> {
                           setState(() {
                             snapshot.data!.remove(snapshot.data![index]);
                           });
-
                         },
                         child: Container(
                             margin: EdgeInsets.all(5),
